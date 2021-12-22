@@ -462,7 +462,7 @@ def loadConfig():
 
         efficiency = "95"
 
-        threadcount = "8"
+        threadcount = "40"
 
        
 
@@ -488,8 +488,8 @@ def loadConfig():
         threadcount = sub(r"\D", "", threadcount)
         if threadcount == "":
             threadcount = cpu_count()
-        elif int(threadcount) > int(8):
-            threadcount = 8
+        elif int(threadcount) > int(40):
+            threadcount = 40
             print(
                 Style.RESET_ALL
                 + Style.BRIGHT
